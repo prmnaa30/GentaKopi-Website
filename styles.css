@@ -31,8 +31,8 @@ body {
 .separator { height: 20px; }
 
 /* Header */
-header { height: 180px; }
-header .logo-text {
+#header { height: 180px; }
+#header .logo-text {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -43,14 +43,14 @@ header .logo-text {
     text-align: left;
 }
 
-header h1{
+#header h1{
     font-family: 'Dancing Script', sans-serif;
     font-size: 40px;
     color: #5B2900;
 }
 
-header p {color: #5B2900;}
-header #header-bg {
+#header p {color: #5B2900;}
+#header #header-bg {
     object-fit: cover;
     z-index: -9999;
     height: 140px;
@@ -58,19 +58,19 @@ header #header-bg {
     position: absolute;
 }
 
-header #logo {
+#header #logo {
     width: 140px;
     height: 140px;
 }
 
 nav {
-    width: 100%;
     background-color: var(--color-primary-4);
-    position: sticky;
     text-align: center;
+    align-items: center;
+    position: relative;
     padding: 10px;
-    top: 0px;
-    z-index: 9999999;
+    height: 45px;
+    overflow: hidden;
 }
 
 nav a.nav-link {
@@ -85,6 +85,16 @@ a.nav-link:hover {
     color: #3f1d00;
     background-color: rgba(236, 159, 96, 0.8);
     font-weight: bold;
+}
+
+#navbar.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbarOffsetMargin {
+    padding-top: 45px;
 }
 /* End Header */
 
@@ -154,7 +164,16 @@ a.nav-link:hover {
     color: #fff;
 }
 /* End Slide */
+/* Footer */
+footer {
+    background-color: var(--color-primary-4);
+    height: 340px;
+}
 
+.media-social {
+    height: 100px;
+    background-color: #532601;
+}
 @media
 (prefers-reduced-motion: no-preference) {
   html {
