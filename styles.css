@@ -71,6 +71,7 @@ nav {
     padding: 10px;
     height: 45px;
     overflow: hidden;
+    z-index: 999;
 }
 
 nav a.nav-link {
@@ -87,14 +88,10 @@ a.nav-link:hover {
     font-weight: bold;
 }
 
-#navbar.sticky {
+.sticky {
     position: fixed;
     top: 0;
     width: 100%;
-}
-
-.navbarOffsetMargin {
-    padding-top: 45px;
 }
 /* End Header */
 
