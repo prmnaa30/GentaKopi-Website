@@ -165,12 +165,77 @@ a.nav-link:hover {
 footer {
     background-color: var(--color-primary-4);
     height: 340px;
+    display: block;
 }
 
-.media-social {
-    height: 100px;
+footer .media-social {
+    height: 77px;
     background-color: #532601;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 35px;
 }
+footer .footer-text {
+    color: #fff;
+    display: flex;
+    gap: 260px;
+    margin: 25px 0 0 35px;
+}
+
+footer #title-text {
+    font-weight: 500;
+    font-size: large;
+    margin-bottom: 10px;
+}
+footer .copyright {
+    color: #fff;
+    margin: 80px 0 0 35px;
+}
+footer p { margin-top: 3px; }
+
+/* Overlay and Button */
+.overlay-button {
+    position: fixed;
+    z-index: 9999;
+    bottom: 20px;
+    right: 10px;
+    
+}
+#btn {
+    position: relative;
+    outline: none;
+    border-radius: 50px;
+    padding: 9px;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#btn #btn-text {
+    max-width: 0;
+    display: inline-block;
+    overflow: hidden;
+    color: #5B2900;
+    transition: max-width 1s;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 700;
+}
+#btn #btn-icon {
+    font-size: 25px;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+}
+
+#btn:hover #btn-text{
+    max-width: 200px;
+}
+
 @media
 (prefers-reduced-motion: no-preference) {
   html {
