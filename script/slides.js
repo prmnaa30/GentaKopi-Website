@@ -3,22 +3,19 @@ var responsiveSlider = function() {
     var sliderWidth = slides.offsetWidth;
     var slideList = document.getElementById("slideWrap");
     var count = 1;
-    var items = slideList.querySelectorAll("li").length;
+    var items = slideList.querySelectorAll("li").length; //Mencari jumlah elemen li pada slideList menggunakan .length, hasilnya akan 3
     var prev = document.getElementById("prev");
     var next = document.getElementById("next");
-    window.addEventListener('resize', function() {
-      sliderWidth = slides.offsetWidth;
-    });
 
     var nextSlide = function() {
         if(count < items) {
             slideList.style.left = "-" + count * sliderWidth + "px";
             count++;
-        }
+        } //jika count < items, property left pada slideList akan -(count*sliderWidth)px
         else if(count = items) {
             slideList.style.left = "0px";
             count = 1;
-        }
+        } //jika count = items, property left direset menjadi 0px
     };
 
     var prevSlide = function() {

@@ -9,4 +9,4 @@ function navFunction() {
     } else {
         navbar.classList.remove('sticky');
     }
-}
+} 
