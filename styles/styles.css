@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Shadows+Into+Light&display=swap');
 
 :root {
@@ -135,17 +135,12 @@ a.nav-link:hover {
     font-size: 2rem;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
     text-align: center;
-    text-decoration: none;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     transition: all 150ms ease;
 }
 
-#slides #prev:hover, #slides #next:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    text-shadow: 0;
-}
+#slides #prev:hover, #slides #next:hover { background-color: rgba(0, 0, 0, 0.5); }
 
 #slides #prev { left: 10px; }
 #slides #next { right: 10px; }
@@ -194,15 +189,98 @@ footer .copyright {
 }
 footer p { margin-top: 3px; }
 
-/* Overlay and Button */
+/* Overlay */
+#overlay-content {
+    position: fixed;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%; height: 100%;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 999;
+}
+
+#overlay-content .feedback-form {
+    background-color: #fff;
+    width: 510px;
+    height: 350px;
+    border-radius: 10px;
+    margin: 12em auto;
+}
+.feedback-form .top-text { 
+    background-color: var(--color-primary-1);
+    border-radius: 10px 10px 0 0;
+}
+
+.feedback-form #close-btn {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 20px;
+    margin: 8px 12px 0 0;
+    float: right;
+}
+.feedback-form #feedback {
+    padding: 15px;
+    width: 99%;
+    margin: 0 auto;
+    display: block;
+}
+.feedback-form #feed-txt {
+    display: inline-block;
+    margin: 10px 0 0 12px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #5B2900;
+    padding-bottom: 10px;
+}
+.feedback-form .logo-feed {
+    float: right;
+    margin: 60px 54px 0 0;
+    color: #3f1d00;
+    font: 13px 'Dancing Script';
+    text-align: center;
+}
+#feedback label {
+    display: block;
+    font-family: 'Helvetica';
+    color: #5B2900;
+    margin-bottom: 4px;
+}
+
+button[type='submit'] {
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #E48C43;
+    border-radius: 5px;
+    color: #3f1d00;
+}
+button[type='submit']:active {
+    color: rgba(63, 29, 0, 0.7);
+    background-color: rgba(228, 140, 67, 0.8);
+}
+
+input, textarea {
+    padding: 4px;
+    background-color: transparent;
+    border: 2px solid var(--color-primary-4);
+    border-radius: 2px;
+    margin-bottom: 6px;
+    width: 20em;
+    outline: none;
+    resize: none;
+}
+input:focus, textarea:focus { border: 2px solid var(--color-primary-3); }
+input::placeholder, textarea::placeholder { font-family: arial; }
+
+/* Show Overlay button */
 .overlay-button {
     position: fixed;
     z-index: 9999;
     bottom: 20px;
     right: 10px;
-    
 }
-#btn {
+#open-btn {
     position: relative;
     outline: none;
     border-radius: 50px;
@@ -215,7 +293,7 @@ footer p { margin-top: 3px; }
     overflow: hidden;
 }
 
-#btn #btn-text {
+#open-btn #btn-text {
     max-width: 0;
     display: inline-block;
     overflow: hidden;
@@ -225,16 +303,16 @@ footer p { margin-top: 3px; }
     font-size: 16px;
     font-weight: 700;
 }
-#btn #btn-icon {
+#open-btn #btn-icon {
     font-size: 25px;
     margin-right: 0;
     display: flex;
     align-items: center;
 }
 
-#btn:hover #btn-text{
-    max-width: 200px;
-}
+/* #open-btn:hover #btn-text{
+    max-width: 300px;
+} */
 
 @media
 (prefers-reduced-motion: no-preference) {
