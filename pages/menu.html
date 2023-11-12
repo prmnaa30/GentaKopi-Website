@@ -3,10 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="../styles/menu.css">
     <title>Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+<!-- Header -->
+    <section id="header">
+        <img id="header-bg" src="../assets/img/header-background - Copy.jpeg">
+        <div class="logo-text">
+            <img id="logo" src="../assets/img/logo.png" alt="our-logo">
+            <div class="header-text">
+                <h1>GentaKopi</h1>
+                <p>Because life is worth living</p>
+            </div>
+        </div>
+    <nav id="navbar">
+        <a class="nav-link" href="../index.html">Home</a>
+        <a class="nav-link" href="#menu">Menu</a>
+        <a class="nav-link" href="#separator-2">About Us</a>
+    </nav>
+    <script src="../script/navbar.js"></script>
+    </section>
+<!-- End Header -->
     
+<!-- Menu -->
+    <section id="menu">
+        <div id="bev-bg">
+            <div style="display: flex;" id="bev">
+                <div id="bev-text">
+                    <h3>GentaKopi Beverages</h3>
+                    <h4>Kopi Terbaik untuk Hari Terbaik</h4>
+                    <p>
+                        <i>Kami menyajikan kopi berkualitas tinggi, dengan kecintaan dan 
+                        <br>dedikasi pada setiap cangkir. Kami teliti dalam setiap detail pembuatan 
+                        <br>Kopi. Rasakan keahlian kami dalam setiap minuman.</i>
+                    </p>
+                </div>
+                <div id="bev-img">
+                    <img id="bev-img" src="../assets/img/americano.png" alt="americano">
+                </div>
+            </div>
+        </div>
+        <div id="food-bg">
+            <div style="display: flex;" id="food">
+                <div id="food-img">
+                    <img id="food-img" src="../assets/img/croissant.png" alt="croissant">
+                </div>
+                <div id="food-text">
+                    <h3>GentaKopi Foods</h3>
+                    <h4>Setiap Gigitan adalah Kenangan Manis</h4>
+                    <p>
+                        <i>Kami menggunakan bahan terbaik untuk kue-kue kami. Setiap rasa 
+                        <br>menghadirkan kenangan manis. Kue yang dibuat dengan kasih sayang, 
+                        <br>disajikan dengan kecintaan. Setiap gigitan merupakan karya seni rasa.</i>
+                    </p>
+                </div>  
+            </div>
+        </div>
+    </section>
+<!-- End Menu -->
+
+<!-- Footer-->
+    <footer id="separator-2">
+        <div class="media-social">
+            <a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff; font-size: 40px;"></i></a>
+            <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook" style="color: #ffffff; font-size: 40px;"></i></a>
+            <a href="https.//wa.me/" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #ffffff; font-size: 40px;"></i></a>
+        </div>
+        <div class="footer-text">
+            <div class="about">
+                <p id="title-text">ABOUT US</p>
+                <p>Our Heritage</p>
+                <p>Career Center</p>
+                <p>News</p>
+            </div>
+            <div class="locate">
+                <p id="title-text">OUR LOCATION</p>
+                <p>Jl. Raya Laplapan Gg. Mawar, Petulu,</p>
+                <p>Kabupaten Gianyar, Bali</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p id="copyright-text">© 2023 GentaKopi</p>
+        </div>
+    </footer>
+    <div class="overlay-button">
+        <button id="open-btn">
+            <span id="btn-text">Send Your Feedback!&nbsp;</span>
+            <span id="btn-icon"><i class="fa-regular fa-message" style="color: #5b2900;"></i></span>
+        </button>
+    </div>
+    <div id="overlay-content">
+        <div class="feedback-form">
+            <div class="top-text">
+                <button id="close-btn"><i class="fa-solid fa-xmark" style="color: #5b2900;"></i></button>
+                <p id="feed-txt">Help us improve by sharing your feedback!</p>
+            </div>
+            <div class="logo-feed">
+                <img style="height: 120px; width: 120px;" src="../assets/img/logo.png">
+                <h1>GentaKopi</h1>
+            </div>
+            <form id="feedback">
+                <label for="name">Name<span style="color: red ;">*</span> :</label>
+                <input name="name" type="text" placeholder="Enter your name... " required>
+                <label for="email">Email<span style="font-size: 10px;"> (optional)</span> :</label>
+                <input name="email" type="email" placeholder="Enter your email... ">
+                <label for="msg">Message<span style="color: red;">*</span> :</label>
+                <textarea name="msg" required rows="5" placeholder="Enter your message..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="../script/overlay+button.js"></script>
 </body>
 </html>
