@@ -18,9 +18,12 @@
 body {
     font-family: 'Poppins', sans-serif;
     overflow-x : hidden;
-    background-color: var(--color-primary-1);
+    background-color: var(--color-primary-4);
 }
 .main {
+    background-color: var(--color-primary-1);
+}
+#main-container {
     background-color: #fff;
     width: 86em;
     margin: 0 auto;
@@ -28,7 +31,10 @@ body {
     padding: 10px;
 }
 
-.separator { height: 20px; }
+.separator {
+    height: 20px; 
+    background-color: var(--color-primary-1);
+}
 
 /* Header */
 #header { height: 180px; width: 100%;}
@@ -96,10 +102,22 @@ a.nav-link:hover {
 /* End Header */
 
 /* Menu */
+#menu-container {
+    display: flex;
+    gap: 200px;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+}
+
 #bev-bg {
     background-image: url(../assets/img/bev-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
 }
 
 #bev-text {
@@ -108,20 +126,17 @@ a.nav-link:hover {
 
 #bev-img {
     width: 300px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 180px;
-}
-
-#bev-text {
-    margin-top: 180px;
-    margin-left: 180px;
+    float: right;
 }
 
 #food-bg {
     background-image: url(../assets/img/food-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
 }
 
 #food-text {
@@ -130,14 +145,7 @@ a.nav-link:hover {
 
 #food-img {
     width: 300px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 90px;
-}
-
-#food-text {
-    margin-top: 180px;
-    margin-left: 430px;
+    float: left;
 }
 /* End Menu */
 
