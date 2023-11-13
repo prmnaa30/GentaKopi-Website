@@ -18,9 +18,13 @@
 body {
     font-family: 'Poppins', sans-serif;
     overflow-x : hidden;
-    background-color: var(--color-primary-1);
+    background-color: var(--color-primary-4);
 }
 .main {
+    background-color: var(--color-primary-1);
+}
+
+#main-container {
     background-color: #fff;
     width: 86em;
     margin: 0 auto;
@@ -28,7 +32,10 @@ body {
     padding: 10px;
 }
 
-.separator { height: 20px; }
+.separator {
+    height: 20px; 
+    background-color: var(--color-primary-1);
+}
 
 /* Header */
 #header { height: 180px; width: 100%;}
