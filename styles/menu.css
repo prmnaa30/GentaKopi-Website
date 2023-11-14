@@ -147,6 +147,16 @@ a.nav-link:hover {
     width: 300px;
     float: left;
 }
+
+#buttonToPage {
+    padding: 8px;
+    border: 1px solid black;
+    position: absolute;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: inherit;
+}
 /* End Menu */
 
 /* Footer */
