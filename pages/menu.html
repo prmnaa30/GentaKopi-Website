@@ -30,7 +30,7 @@
 <!-- Menu -->
     <section id="menu">
         <div id="bev-bg">
-            <div id="menu-container">
+            <div class="menu-container">
                 <div id="bev-text">
                     <h3>GentaKopi Beverages</h3>
                     <h4>Kopi Terbaik untuk Hari Terbaik</h4>
@@ -39,15 +39,18 @@
                         <br>dedikasi pada setiap cangkir. Kami teliti dalam setiap detail pembuatan 
                         <br>Kopi. Rasakan keahlian kami dalam setiap minuman.</i>
                     </p>
-                    <a id="buttonToMenu">Explore More <i class="fa-solid fa-angles-right fa-sm" style="color: #000000;"></i></a>
+                    <a class="buttonToMenu" id="bevButton" href="#beverage-menu">Explore More <i class="fa-solid fa-angles-right fa-sm" style="color: #000000;"></i></a>
                 </div>
                 <div id="bev-img">
                     <img id="bev-img" src="../assets/img/americano.png" alt="americano">
                 </div>
             </div>
         </div>
+        <div id="beverage-menu">
+            <img class="full-menu-img" src="../assets/img/beverages-all-menu.png" alt="beverages-menu">
+        </div>
         <div id="food-bg">
-            <div id="menu-container">
+            <div class="menu-container">
                 <div id="food-img">
                     <img id="food-img" src="../assets/img/croissant.png" alt="croissant">
                 </div>
@@ -59,15 +62,17 @@
                         <br>menghadirkan kenangan manis. Kue yang dibuat dengan kasih sayang, 
                         <br>disajikan dengan kecintaan. Setiap gigitan merupakan karya seni rasa.</i>
                     </p>
-                    <a id="buttonToMenu">Explore More <i class="fa-solid fa-angles-right fa-sm" style="color: #000000;"></i></a>
+                    <a class="buttonToMenu" id="foodButton">Explore More <i class="fa-solid fa-angles-right fa-sm" style="color: #000000;"></i></a>
                 </div>  
             </div>
         </div>
+        <div id="food-menu">
+            <img class="full-menu-img" src="../assets/img/food-all-menu.png" alt="food-menu">
+        </div>
     </section>
 <!-- End Menu -->
-
 <!-- Footer-->
-    <footer id="separator-2">
+    <footer>
         <div class="media-social">
             <div id="icons">
                 <a href="https://instagram.com/gentaabhuana_" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff; font-size: 40px;"></i></a>
@@ -97,6 +102,7 @@
             <span id="btn-icon"><i class="fa-regular fa-message" style="color: #5b2900;"></i></span>
         </button>
     </div>
+<!-- Feedback overlay -->
     <div id="overlay-content">
         <div class="feedback-form">
             <div class="top-text">
@@ -119,5 +125,6 @@
         </div>
     </div>
     <script src="../script/overlay+button.js"></script>
+    <script src="../script/menu.js"></script>
 </body>
 </html>
