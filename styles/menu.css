@@ -102,7 +102,11 @@ a.nav-link:hover {
 /* End Header */
 
 /* Menu */
-#menu-container {
+#menu {
+    background-color: var(--color-primary-1);
+}
+
+.menu-container {
     display: flex;
     gap: 200px;
     width: 1000px;
@@ -129,6 +133,20 @@ a.nav-link:hover {
     float: right;
 }
 
+#beverage-menu {
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+    display: flex;
+    justify-content: center;
+    background-image: url('../assets/img/bevMenu.jpg');
+}
+
+.full-menu-img {
+    margin: 120px;
+    width: 900px;
+    border-radius: 10px;
+}
+
 #food-bg {
     background-image: url(../assets/img/food-bg.jpg);
     background-repeat: no-repeat;
@@ -148,7 +166,15 @@ a.nav-link:hover {
     float: left;
 }
 
-#buttonToPage {
+#food-menu {
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+    display: flex;
+    justify-content: center;
+    background-image: url('https://img.freepik.com/premium-vector/fast-food-seamless-pattern-with_202271-545.jpg');
+}
+
+.buttonToMenu {
     padding: 8px;
     border: 1px solid black;
     position: absolute;
@@ -156,8 +182,12 @@ a.nav-link:hover {
     border-radius: 5px;
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 /* End Menu */
+
+/* Menu Overlays */
+
 
 /* Footer */
 footer {
