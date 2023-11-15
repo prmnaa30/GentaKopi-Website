@@ -24,14 +24,6 @@ body {
     background-color: var(--color-primary-1);
 }
 
-#main-container {
-    background-color: #fff;
-    width: 86em;
-    margin: 0 auto;
-    border-radius: 10px;
-    padding: 10px;
-}
-
 .separator {
     height: 20px; 
     background-color: var(--color-primary-1);
@@ -103,6 +95,14 @@ a.nav-link:hover {
 /* End Header */
 
 /* Img Slide */
+#main-container {
+    background-color: #fff;
+    width: 86em;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
 #slides {
     position: relative;
     width: 83em;
