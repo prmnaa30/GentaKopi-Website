@@ -1,10 +1,9 @@
-//====//beverages//====//
+///====//beverages//====///
 const bevMenu = document.getElementById('beverage-menu');
 const bevButton = document.getElementById('bevButton');
 
 // open expand function
 bevButton.addEventListener('click', bevExpand);
-bevMenu.addEventListener('mouseenter', bevExpand);
 function bevExpand(){
     bevMenu.style.maxHeight = '915px';
     // 200ms setelah foodButton di klik, eksekusi fungsi scrollFunc()
@@ -21,13 +20,13 @@ bevMenu.addEventListener('mouseleave', bevClose);
 function bevClose() {
     bevMenu.style.maxHeight = '0';
 }
-//====//foods//====//
+
+///====//foods//====///
 const foodMenu = document.getElementById('food-menu');
 const foodButton = document.getElementById('foodButton');
 
 // open expand function
 foodButton.addEventListener('click', foodExpand);
-foodMenu.addEventListener('mouseenter', foodExpand)
 function foodExpand() {
     foodMenu.style.maxHeight = '915px';
     // 200ms setelah foodButton di klik, eksekusi fungsi scrollFunc()
