@@ -28,5 +28,5 @@ function changeSubBtn() {
     setInterval(() => {
         submitText.style.display = 'inline';
         submittedText.style.display = 'none';
-    }, 1200);
+    }, 1100);
 }
