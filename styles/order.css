@@ -109,6 +109,15 @@ a.nav-link:hover {
     align-items: center;
     flex-direction: column;
 }
+/* change order button text */
+#orderDefault {
+    display: inline;
+}
+#orderSent {
+    display: none;
+}
+/* change order button text */
+
 /* Orders */
 
 /* Footer */
@@ -225,7 +234,8 @@ footer p { margin-top: 3px; }
     color: rgba(63, 29, 0, 0.7);
     background-color: rgba(228, 140, 67, 0.8);
 }
-input, textarea {
+#feedback input,
+#feedback textarea {
     padding: 4px;
     background-color: transparent;
     border: 2px solid var(--color-primary-4);
