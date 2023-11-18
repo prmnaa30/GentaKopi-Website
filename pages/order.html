@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/order.css">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+<!-- Header -->
+    <section id="header">
+        <img id="header-bg" src="../assets/img/header-background - Copy.jpeg">
+        <div class="logo-text">
+            <img id="logo" src="../assets/img/logo.png" alt="our-logo">
+            <div class="header-text">
+                <h1>GentaKopi</h1>
+                <p>Because life is worth living</p>
+            </div>
+        </div>
+    <nav id="navbar">
+        <a class="nav-link" href="../index.html">Home</a>
+        <a class="nav-link" href="../pages/menu.html">Menu</a>
+        <a class="nav-link" href="#footer">About Us</a>
+        <a class="nav-link" href="#order">Order Now</a>
+    </nav>
+    <script src="../script/navbar.js"></script>
+    </section>
+<!-- End Header -->
+    
+<!-- Order -->
+    <div id="order">
+        <div id="online-order">
+            <div id="onlineText">
+                <h1>Online</h1>
+            </div>
+            <div id="online-content">
+                <p>Get our best drinks and food in just a few clicks!</p>
+                <div id="links">
+
+                </div>
+            </div>
+        </div>
+        <div id="offline-order">
+            <div id="offlineText">
+                <h1>Offline</h1>
+            </div>
+            <div id="offline-content">
+                <p>New! Order without queuing at our shop. Add your order, pay, and we will bring them to your table!</p>
+                <div id="offline-form">
+                    <form id="order-offline">
+                        <label for="table">Table: </label>
+                        <input name="table" type="number">
+                        <div id="beverage-input">
+                            <label for="drinks">Beverages: </label>
+                            <select name="drinks" id="drinks">
+                                <optgroup label="Coffee">
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </optgroup>
+                                <optgroup label="Non-Coffee">
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </optgroup>
+                            </select>
+                            <label for="drink-type">Iced or Hot?</label>
+                            <select name="drink-type" id="drink-type">
+                                <option value="iced">Iced</option>
+                                <option value="hot">Hot</option>
+                            </select>
+                        </div>
+                        <label for="foods">Foods: </label>
+                        <select name="foods" id="foods">
+                           <optgroup label="Sandwich">
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                           </optgroup>
+                           <optgroup label="Croissant">
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                           </optgroup>
+                           <optgroup label="Toast">
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                           </optgroup>
+                           <optgroup label="Croffle">
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                           </optgroup>
+                        </select>
+                        <label for="note">Additional note:</label>
+                        <textarea name="note" id="note" cols="30" rows="10"></textarea>
+                    </form>
+                    <script src="../script/submitOrder.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- End Order -->
+
+<!-- Footer-->
+    <footer id="footer">
+        <div class="media-social">
+            <div id="icons">
+                <a href="https://instagram.com/gentaabhuana_" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff; font-size: 40px;"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100088851060285&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook" style="color: #ffffff; font-size: 40px;"></i></a>
+                <a href="https://wa.me/62881037321164" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #ffffff; font-size: 40px;"></i></a>
+            </div>
+        </div>
+        <div class="footer-text">
+            <div class="about">
+                <p id="title-text">ABOUT US</p>
+                <p>GentaKopi is a small coffee shop that was founded in early 2023.
+                    We provide the best food and drinks wholeheartedly for you everyday.</p>
+            </div>
+            <div class="locate">
+                <p id="title-text">OUR LOCATION</p>
+                <p>Jl. Raya Laplapan Gg. Mawar, Petulu,</p>
+                <p>Kabupaten Gianyar, Bali</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p id="copyright-text">© 2023 GentaKopi</p>
+        </div>
+    </footer>
+    <div class="overlay-button">
+        <button id="open-btn">
+            <span id="btn-text">Send Your Feedback!&nbsp;</span>
+            <span id="btn-icon"><i class="fa-regular fa-message" style="color: #5b2900;"></i></span>
+        </button>
+    </div>
+<!-- Feedback overlay -->
+    <div id="overlay-content">
+        <div class="feedback-form">
+            <div class="top-text">
+                <button id="close-btn"><i class="fa-solid fa-xmark" style="color: #5b2900;"></i></button>
+                <p id="feed-txt">Help us improve by sharing your feedback!</p>
+            </div>
+            <div class="logo-feed">
+                <img style="height: 120px; width: 120px;" src="../assets/img/logo.png">
+                <h1>GentaKopi</h1>
+            </div>
+            <form id="feedback" onsubmit="changeSubBtn()">
+                <label for="name">Name<span style="color: red ;">*</span> :</label>
+                <input id="name" name="name" type="text" placeholder="Enter your name... " required>
+                <label for="email">Email<span style="font-size: 10px;"> (optional)</span> :</label>
+                <input id="email" name="email" type="email" placeholder="Enter your email... ">
+                <label for="message">Message<span style="color: red;">*</span> :</label>
+                <textarea id="message" name="message" required rows="5" placeholder="Enter your message..."></textarea>
+                <button type="submit" name="submit" id="submitBtn">
+                    <span id="beforeSent">Submit</span>
+                    <span id="afterSent">Submitted <i class="fa-regular fa-circle-check fa-xl" style="color: #5b2900;"></i></span>
+                </button>
+            </form>
+            <script src="../script/submitFeedback.js"></script>
+        </div>
+    </div>
+    <script src="../script/overlay+button.js"></script>
+    <script src="../script/menu.js"></script>
+</body>
+</html>
