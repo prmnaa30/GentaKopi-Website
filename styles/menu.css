@@ -188,9 +188,6 @@ a.nav-link:hover {
 }
 /* End Menu */
 
-/* Menu Overlays */
-
-
 /* Footer */
 footer {
     background-color: var(--color-primary-4);
@@ -293,7 +290,7 @@ footer p { margin-top: 3px; }
     margin-bottom: 4px;
 }
 
-button[type='submit'] {
+#submitBtn {
     border: none;
     cursor: pointer;
     padding: 10px;
@@ -301,12 +298,11 @@ button[type='submit'] {
     border-radius: 5px;
     color: #3f1d00;
 }
-button[type='submit']:active {
+#submitBtn:active {
     color: rgba(63, 29, 0, 0.7);
     background-color: rgba(228, 140, 67, 0.8);
 }
-
-input, textarea {
+#feedback input, #feedback textarea {
     padding: 4px;
     background-color: transparent;
     border: 2px solid var(--color-primary-4);
@@ -316,8 +312,21 @@ input, textarea {
     outline: none;
     resize: none;
 }
-input:focus, textarea:focus { border: 2px solid var(--color-primary-3); }
+
+#feedback input:focus,
+#feedback textarea:focus {
+    border: 2px solid var(--color-primary-3);
+}
 input::placeholder, textarea::placeholder { font-family: arial; }
+
+/* Change submit button text */
+#submitBtn #afterSent {
+    display: none;
+}
+#submitBtn #beforeSent {
+    display: inline;
+}
+/* Change submit button text */
 
 /* Show Overlay button */
 .overlay-button {

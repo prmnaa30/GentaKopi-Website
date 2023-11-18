@@ -22,6 +22,7 @@
         <a class="nav-link" href="../index.html">Home</a>
         <a class="nav-link" href="#menu">Menu</a>
         <a class="nav-link" href="#footer">About Us</a>
+        <a class="nav-link" href="../pages/order.html">Order Now</a>
     </nav>
     <script src="../script/navbar.js"></script>
     </section>
@@ -113,15 +114,19 @@
                 <img style="height: 120px; width: 120px;" src="../assets/img/logo.png">
                 <h1>GentaKopi</h1>
             </div>
-            <form id="feedback">
+            <form id="feedback" onsubmit="changeSubBtn()">
                 <label for="name">Name<span style="color: red ;">*</span> :</label>
                 <input id="name" name="name" type="text" placeholder="Enter your name... " required>
                 <label for="email">Email<span style="font-size: 10px;"> (optional)</span> :</label>
                 <input id="email" name="email" type="email" placeholder="Enter your email... ">
-                <label for="msg">Message<span style="color: red;">*</span> :</label>
-                <textarea id="msg" name="msg" required rows="5" placeholder="Enter your message..."></textarea>
-                <button type="submit">Submit</button>
+                <label for="message">Message<span style="color: red;">*</span> :</label>
+                <textarea id="message" name="message" required rows="5" placeholder="Enter your message..."></textarea>
+                <button type="submit" name="submit" id="submitBtn">
+                    <span id="beforeSent">Submit</span>
+                    <span id="afterSent">Submitted <i class="fa-regular fa-circle-check fa-xl" style="color: #5b2900;"></i></span>
+                </button>
             </form>
+            <script src="../script/submitFeedback.js"></script>
         </div>
     </div>
     <script src="../script/overlay+button.js"></script>
