@@ -14,7 +14,7 @@ forms.addEventListener('submit', (e) => {
     // setelah 1000ms (1 detik), tutup overlay dan reset form
     setTimeout(() => {
         document.getElementById('overlay-content').style.display = 'none';
-        forms.reset(); // reset form
+        forms.reset(); // reset form 
     }, 1000);
 });
 
