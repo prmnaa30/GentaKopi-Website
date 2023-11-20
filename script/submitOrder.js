@@ -7,12 +7,21 @@ const sentText = document.getElementById('orderSent');
 orderForm.addEventListener('submit', (e) => {
     // reset ukuran button
     sendBtn.style.transform = 'scale(1)';
+    
+    orderForm[0].style.opacity = '.5';
+    orderForm[1].style.opacity = '.5';
+    orderForm[2].style.opacity = '.5';
+    orderForm[3].style.opacity = '.5';
+    orderForm[4].style.opacity = '.5';
+    orderForm[5].style.opacity = '.5';
+
     e.preventDefault();
     let data = new FormData(orderForm);
     fetch('https://script.google.com/macros/s/AKfycbxrvhmN11KwkbmyBCKMtvbxRy89GRPqfmiXcspaLDX5hFbvm-rnwZMIJW-xWv3rGJPO/exec', {
         method: "POST",
         body: data
     });
+
     // reset form setelah 1.1 detik
     setTimeout(() => {
         orderForm.reset();
@@ -20,13 +29,21 @@ orderForm.addEventListener('submit', (e) => {
     }, 1500);
     setTimeout(() => {
         orderForm.style.opacity = '1';
+        
+        orderForm[0].style.opacity = '1';
+        orderForm[1].style.opacity = '1';
+        orderForm[2].style.opacity = '1';
+        orderForm[3].style.opacity = '1';
+        orderForm[4].style.opacity = '1';
+        orderForm[5].style.opacity = '1';
+
     }, 1700);
 });
 
 function changeSendBtn() {
     defaultText.style.display = 'none';
     sentText.style.display = 'inline';
-    sendBtn.style.backgroundColor = 'rgba(228, 140, 67, 0.8)';
+    sendBtn.style.backgroundColor = 'rgba(228, 140, 67, 0.9)';
 
     setTimeout(() => {
         defaultText.style.display = 'inline';
