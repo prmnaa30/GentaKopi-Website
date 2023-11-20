@@ -56,6 +56,8 @@ function changeOpt() {
 // return DrinkType disabled after form submit
 document.getElementById('form-content').addEventListener('submit', resetDrinkType);
 function resetDrinkType() {
-    drinkType.disabled = true;
-    drinkType.add(blank, drinkType[0]);
+    setTimeout(() => {
+        drinkType.add(blank, drinkType[0]);
+        drinkType.disabled = true;
+    }, 1700);
 }
