@@ -17,7 +17,7 @@ function changeOpt() {
     }
     // untuk beverages yang hanya ada pilihan 'hot'
     else if (drinkSelect.value == 'Red-Eye' || drinkSelect.value == 'Hot-Chocolate') {
-        drinkType.remove(drinkType[0]);
+        blank.remove();
         drinkType.disabled = false;
         iced.disabled = true; //pilihan iced jadi tidak bisa dipilih
         hot.disabled = false; //pilihan hot jadi bisa dipilih
@@ -38,7 +38,7 @@ function changeOpt() {
         drinkSelect.value == 'Mango-Tango' ||
         drinkSelect.value == 'Lemon-Tea'
         ) {
-            drinkType.remove(drinkType[0]);
+            blank.remove();
             drinkType.disabled = false;
             hot.disabled = true; //pilihan hot jadi tidak bisa dipilih
             iced.disabled = false; //pilihan iced jadi bisa dipilih
@@ -46,7 +46,7 @@ function changeOpt() {
         }
     // untuk beverages yang ada pilihan 'iced' dan 'hot'
     else {
-        drinkType.remove(drinkType[0]);
+        blank.remove();
         drinkType.disabled = false;
         iced.disabled = false;
         hot.disabled = false;
