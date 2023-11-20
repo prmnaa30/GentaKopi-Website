@@ -40,8 +40,6 @@ orderForm.addEventListener('submit', (e) => {
         orderForm[4].style.opacity = '1';
         orderForm[5].style.opacity = '1';
 
-        // return drinkType disabled
-        document.getElementById('drinkType').disabled = true;
     }, 1700);
 });
 
