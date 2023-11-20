@@ -28,7 +28,7 @@ function changeOpt() {
         drinkSelect.value == 'Affogato' || 
         drinkSelect.value == 'Cold-Brew-Coffee' ||
         drinkSelect.value == 'Nitro-Cold-Brew' ||
-        drinkSelect.value == 'Frappucino' ||
+        drinkSelect.value == 'Frappuccino' ||
         drinkSelect.value == 'Turkish-Coffee' ||
         drinkSelect.value == 'Matcha-Latte' ||
         drinkSelect.value == 'Squeezed-Lemonade' ||
