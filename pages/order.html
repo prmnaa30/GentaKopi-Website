@@ -32,64 +32,80 @@
     <div id="order">
         <div id="online-order">
             <div id="onlineText">
-                <h1>Online</h1>
+                <p>Online Order</p>
             </div>
             <div id="online-content">
                 <p>Get our best drinks and food in just a few clicks!</p>
                 <div id="links">
-
+                    <div id="link-content">
+                        <a href="https://gojek.com/en-id/" target="_blank">
+                            <img src="../assets/img/gojek-logo.png">
+                        </a>
+                        <a href="https://grab.com/id/" target="_blank">
+                            <img src="../assets/img/grab-logo.png">
+                        </a>
+                        <a href="https://shopee.co.id/m/shopeefood/" target="_blank">
+                            <img src="../assets/img/shopeefood-logo.png">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         <div id="offline-order">
             <div id="offlineText">
-                <h1>Offline</h1>
+                <p>Offline Order</p>
             </div>
             <div id="offline-content">
-                <p>New! Order without queuing at our shop.
+                <p>NEW! Order without queuing at our shop.
                     <br>Add your order to cart, click "Order", and we will bring them to your table!
                 </p>
-                <div id="offline-form">
-                    <form id="order-offline">
-                        <label for="table">Table: </label>
-                        <input type="number" name="table" id="table" min="1">
+                <div id="order-form">
+                    <form id="form-content" onsubmit="changeSendBtn()">
+                        <label for="custName">Hi, I am : </label>
+                        <input type="text" name="custName" id="custName" placeholder="Enter your name here..." required>
+                        <label for="table">At table number: </label>
+                        <input type="number" name="table" id="table" min="1" max="10" placeholder="1~10" required>
                         <div id="beverage-input">
-                            <label for="drinks">Beverages: </label>
-                            <select name="drinks" id="drinks">
-                                <option value="None" selected>None</option>
-                                <optgroup label="Coffee">
-                                    <option value="Espresso">Espresso (Ice 20, Hot 20)</option>
-                                    <option value="Americano">Americano (Ice 25, Hot 25)</option>
-                                    <option value="Latte">Latte (Ice 30, Hot 30)</option>
-                                    <option value="Cappucino">Cappucino (Ice 30, Hot 30)</option>
-                                    <option value="Macchiato">Macchiato (Ice 25, Hot 25)</option>
-                                    <option value="Mocha">Mocha (Ice 35, Hot 35)</option>
-                                    <option value="Affogato">Affogato (Ice 40)</option>
-                                    <option value="Flat-White">Flat White (Ice 30, Hot 30)</option>
-                                    <option value="Cortado">Cortado (Ice 25, Hot 25)</option>
-                                    <option value="Cold-Brew-Coffee">Cold Brew Coffee (Ice 35)</option>
-                                    <option value="Nitro-Cold-Brew">Nitro Cold Brew (Ice 40)</option>
-                                    <option value="Frappuccino">Frappuccino (Ice 35)</option>
-                                    <option value="Turkish-Coffee">Turkish Coffee (Ice 25)</option>
-                                    <option value="Red-Eye">Red Eye (Hot 35)</option>
-                                </optgroup>
-                                <optgroup label="Non-Coffee">
-                                    <option value="Hot-Chocolate">Hot Chocolate (Hot 25)</option>
-                                    <option value="Matcha-Latte">Matcha Latte (Ice 35)</option>
-                                    <option value="Squeezed-Lemonade">Squeezed Lemonade (Ice 25)</option>
-                                    <option value="Smoothies">Smoothies (Ice 30)</option>
-                                    <option value="Tea">Tea (Ice 15, Hot 15)</option>
-                                    <option value="Italian-Soda">Italian Soda (Ice 25)</option>
-                                    <option value="Virgin-Mojito">Virgin Mojito (Ice 35)</option>
-                                    <option value="Mango-Tango">Mango Tango (Ice 25)</option>
-                                    <option value="Lemon-Tea">Lemon Tea (Ice 20)</option>
-                                </optgroup>
-                            </select>
-                            <label for="drink-type">Iced or Hot?</label>
-                            <select name="drink-type" id="drink-type" disabled>
-                                <option value="iced" id="iced">Iced</option>
-                                <option value="hot" id="hot">Hot</option>
-                            </select>
+                            <div id="drink-name">
+                                <label for="drinks">Beverages: </label>
+                                <select name="drinks" id="drinks">
+                                    <option value="None" selected>None</option>
+                                    <optgroup label="Coffee">
+                                        <option value="Espresso">Espresso (Ice 20, Hot 20)</option>
+                                        <option value="Americano">Americano (Ice 25, Hot 25)</option>
+                                        <option value="Latte">Latte (Ice 30, Hot 30)</option>
+                                        <option value="Cappucino">Cappucino (Ice 30, Hot 30)</option>
+                                        <option value="Macchiato">Macchiato (Ice 25, Hot 25)</option>
+                                        <option value="Mocha">Mocha (Ice 35, Hot 35)</option>
+                                        <option value="Affogato">Affogato (Ice 40)</option>
+                                        <option value="Flat-White">Flat White (Ice 30, Hot 30)</option>
+                                        <option value="Cortado">Cortado (Ice 25, Hot 25)</option>
+                                        <option value="Cold-Brew-Coffee">Cold Brew Coffee (Ice 35)</option>
+                                        <option value="Nitro-Cold-Brew">Nitro Cold Brew (Ice 40)</option>
+                                        <option value="Frappuccino">Frappuccino (Ice 35)</option>
+                                        <option value="Turkish-Coffee">Turkish Coffee (Ice 25)</option>
+                                        <option value="Red-Eye">Red Eye (Hot 35)</option>
+                                    </optgroup>
+                                    <optgroup label="Non-Coffee">
+                                        <option value="Hot-Chocolate">Hot Chocolate (Hot 25)</option>
+                                        <option value="Matcha-Latte">Matcha Latte (Ice 35)</option>
+                                        <option value="Squeezed-Lemonade">Squeezed Lemonade (Ice 25)</option>
+                                        <option value="Smoothies">Smoothies (Ice 30)</option>
+                                        <option value="Tea">Tea (Ice 15, Hot 15)</option>
+                                        <option value="Italian-Soda">Italian Soda (Ice 25)</option>
+                                        <option value="Virgin-Mojito">Virgin Mojito (Ice 35)</option>
+                                        <option value="Mango-Tango">Mango Tango (Ice 25)</option>
+                                        <option value="Lemon-Tea">Lemon Tea (Ice 20)</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div id="hot-cold">
+                                <label for="drinkType">Iced or Hot?</label>
+                                <select name="drinkType" id="drinkType" disabled>
+                                    <option value="iced" id="iced">Iced</option>
+                                    <option value="hot" id="hot">Hot</option>
+                                </select>
+                            </div>
                             <script src="../script/changeOption.js"></script>
                         </div>
                         <label for="foods">Foods: </label>
@@ -125,13 +141,14 @@
                            </optgroup>
                         </select>
                         <label for="note">Additional note:</label>
-                        <textarea name="note" id="note" cols="30" rows="10" placeholder="ex: Less sugar, extra ice, etc"></textarea>
-                        <button type="submit" name="submit">
-                            <span id="orderDefault">Order Now</span>
-                            <span id="orderSent">Order Added! We will bring it to your table when it's done!</span>
+                        <textarea name="note" id="note" rows="10" placeholder="ex: Less sugar, extra ice, etc"></textarea>
+                        <button type="submit" name="submitOrder" id="submitOrder">
+                            <span id="orderDefault"><i class="fa-solid fa-cart-shopping" style="color: #3f1d00;"></i> Order Now</span>
+                            <span id="orderSent"><i class="fa-regular fa-square-check" style="color: #3f1d00;"></i> Order Added! We will bring it to your table when it's done!</span>
                         </button>
                     </form>
                     <script src="../script/submitOrder.js"></script>
+                    <img src="../assets/img/order-content-img.png">
                 </div>
             </div>
         </div>
