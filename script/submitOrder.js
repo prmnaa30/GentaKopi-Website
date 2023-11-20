@@ -26,8 +26,23 @@ orderForm.addEventListener('submit', (e) => {
     // reset form setelah 1.1 detik
     setTimeout(() => {
         orderForm.reset();
-        window.location.reload();
+        orderForm.style.opacity = '.3';
     }, 1500);
+    setTimeout(() => {
+        // return orderForm opacity
+        orderForm.style.opacity = '1';
+
+        // return input, select, textarea opacity
+        orderForm[0].style.opacity = '1';
+        orderForm[1].style.opacity = '1';
+        orderForm[2].style.opacity = '1';
+        orderForm[3].style.opacity = '1';
+        orderForm[4].style.opacity = '1';
+        orderForm[5].style.opacity = '1';
+
+        // return drinkType disabled
+        document.getElementById('drinkType').disabled = true;
+    }, 1700);
 });
 
 function changeSendBtn() {
