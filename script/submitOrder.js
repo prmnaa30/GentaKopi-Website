@@ -8,7 +8,7 @@ orderForm.addEventListener('submit', (e) => {
     // reset ukuran button
     sendBtn.style.transform = 'scale(1)';
     
-    // form input, select and textarea opacity
+    // lower input, select and textarea opacity after submit
     orderForm[0].style.opacity = '.5';
     orderForm[1].style.opacity = '.5';
     orderForm[2].style.opacity = '.5';
