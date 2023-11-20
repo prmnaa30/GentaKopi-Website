@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Shadows+Into+Light&display=swap');
 
 :root {
@@ -91,7 +91,7 @@ nav a.nav-link {
 a.nav-link:hover {
     color: #3f1d00;
     background-color: rgba(236, 159, 96, 0.8);
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .sticky {
@@ -108,16 +108,176 @@ a.nav-link:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 50px;
+    padding: 60px 0;
 }
-/* change order button text */
+        /* change order button text */
 #orderDefault {
     display: inline;
+    font-size: 15px;
 }
 #orderSent {
     display: none;
+    font-size: 15px;
 }
-/* change order button text */
+        /* change order button text */
 
+    /* online */
+#online-order {
+    border-radius: 15px;
+    width: 1250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#onlineText {
+    background-color: var(--color-primary-0);
+    color: #fff;
+    width: 1250px;
+    border-radius: 15px;
+    z-index: 1;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.25);
+}
+#onlineText p {
+    padding: 3px;
+    margin-left: 10px;
+    font-size: 26px;
+}
+#online-content {
+    width: 1234px;
+    background-color: #F4F4F4;
+    border-radius: 0 0 15px 15px;
+    position: relative;
+    top: -5px;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.25);
+}
+#online-content p {
+    font-weight: 500;
+    font-size: 16px;
+    color: #3F1D00;
+    margin: 15px 0 10px 30px;
+}
+#links {
+    background-color: #D9D9D9;
+    margin: 0 20px 20px 20px;
+    border-radius: 15px;
+}
+#link-content {
+    position: relative;
+    top: 3px;
+    left: 3px;
+    display: flex;
+}
+#links a {
+    text-decoration: none;
+    margin: 10px;
+}
+#links img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+    /* offline */
+#offline-order {
+    border-radius: 15px;
+    width: 1250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#offlineText {
+    background-color: var(--color-primary-0);
+    color: #fff;
+    width: 1250px;
+    border-radius: 15px;
+    z-index: 1;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.25);
+}
+#offlineText p {
+    padding: 3px;
+    margin-left: 10px;
+    font-size: 26px;
+}
+#offline-content {
+    width: 1234px;
+    background-color: #F4F4F4;
+    border-radius: 0 0 15px 15px;
+    position: relative;
+    top: -5px;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.25);
+}
+#offline-content p {
+    font-weight: 500;
+    font-size: 16px;
+    color: #3F1D00;
+    margin: 15px 0 10px 30px;
+}
+#form-content {
+    background-color: #D9D9D9;
+    margin: 13px 20px 20px 20px;
+    border-radius: 15px;
+    width: 450px;
+    padding: 10px;
+}
+
+#form-content label { display: block; }
+
+#form-content #beverage-input {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+#form-content input,
+#form-content select {
+    background: #FFF8EA;
+    width: 200px;
+    padding: 4px;
+    border: 1.5px solid #B3A492;
+    border-radius: 2px;
+    margin-bottom: 6px;
+    outline: none;
+    resize: none;
+}
+#form-content textarea {
+    padding: 4px;
+    width: 450px;
+    background: #FFF8EA;
+    border: 1.5px solid #B3A492;
+    border-radius: 2px;
+    outline: none;
+    resize: none;
+}
+#form-content #foods { width: 450px; }
+#form-content #drinks { width: 320px; }
+#form-content #drinkType { width: 100px; }
+
+#order-form {
+    background-color: #D9D9D9;
+    display: flex;
+    border-radius: 15px;
+    width: 1194px;
+    margin: 0 auto 20px auto;
+}
+#order-form img{
+    object-fit: cover;
+    transform: scale(.92);
+    margin-top: 10px;
+    margin-left: 35px;
+}
+#submitOrder {
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 450px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #E48C43;
+    border-radius: 5px;
+    color: #3f1d00;
+    font-weight: 500;
+}
 /* Orders */
 
 /* Footer */
@@ -265,7 +425,9 @@ input::placeholder, textarea::placeholder { font-family: arial; }
     position: fixed;
     z-index: 9999;
     bottom: 20px;
-    right: 10px;
+    right: 20px;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.25);
+    border-radius: 50px;
 }
 #open-btn {
     position: relative;

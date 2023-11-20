@@ -12,6 +12,7 @@ openBtn.addEventListener('mouseout', hoverFunc2);
 function hoverFunc2() {
     document.getElementById('btn-text').style.maxWidth = '0';
 };
+
 // Overlay toggle
 openBtn.addEventListener('click', openOverlay);
 closeBtn.addEventListener('click', closeOverlay);

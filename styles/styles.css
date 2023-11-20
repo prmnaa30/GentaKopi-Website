@@ -310,7 +310,9 @@ input::placeholder, textarea::placeholder { font-family: arial; }
     position: fixed;
     z-index: 9999;
     bottom: 20px;
-    right: 10px;
+    right: 20px;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.25);
+    border-radius: 50px;
 }
 #open-btn {
     position: relative;
@@ -341,10 +343,6 @@ input::placeholder, textarea::placeholder { font-family: arial; }
     display: flex;
     align-items: center;
 }
-
-/* #open-btn:hover #btn-text{
-    max-width: 300px;
-} */
 
 @media
 (prefers-reduced-motion: no-preference) {
