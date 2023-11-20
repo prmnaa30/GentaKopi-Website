@@ -1,4 +1,4 @@
-const orderForm = document.querySelector('#form-content');
+const orderForm = document.getElementById('form-content');
 const sendBtn = document.getElementById('submitOrder');
 const defaultText = document.getElementById('orderDefault');
 const sentText = document.getElementById('orderSent');
@@ -16,7 +16,11 @@ orderForm.addEventListener('submit', (e) => {
     // reset form setelah 1.1 detik
     setTimeout(() => {
         orderForm.reset();
-    }, 2100);
+        orderForm.style.opacity = '.3'
+    }, 1500);
+    setTimeout(() => {
+        orderForm.style.opacity = '1';
+    }, 1700);
 });
 
 function changeSendBtn() {
@@ -28,7 +32,7 @@ function changeSendBtn() {
         defaultText.style.display = 'inline';
         sentText.style.display = 'none';
         sendBtn.style.backgroundColor = '#E48C43';
-    }, 2000);
+    }, 1500);
 }
 
 // submit button hover

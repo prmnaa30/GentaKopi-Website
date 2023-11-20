@@ -1,4 +1,6 @@
 const drinkSelect = document.getElementById('drinks');
+const drinkType = document.getElementById('drinkType');
+const blank = document.getElementById('blank');
 const iced = document.getElementById('iced');
 const hot = document.getElementById('hot');
 
@@ -10,11 +12,13 @@ drinks.addEventListener('change', changeOpt);
 function changeOpt() {
     if (drinkSelect.value == 'None') {
         //jika None, maka tidak dapat memilih iced/hot
-        document.getElementById('drink-type').disabled = true;
+        drinkType.disabled = true;
+        drinkType.add(blank, drinkType[0]);
     }
     // untuk beverages yang hanya ada pilihan 'hot'
     else if (drinkSelect.value == 'Red-Eye' || drinkSelect.value == 'Hot-Chocolate') {
-        document.getElementById('drink-type').disabled = false;
+        drinkType.remove(drinkType[0]);
+        drinkType.disabled = false;
         iced.disabled = true; //pilihan iced jadi tidak bisa dipilih
         hot.disabled = false; //pilihan hot jadi bisa dipilih
         hot.selected = true; //pilihan hot akan langsung terpilih
@@ -34,14 +38,16 @@ function changeOpt() {
         drinkSelect.value == 'Mango-Tango' ||
         drinkSelect.value == 'Lemon-Tea'
         ) {
-        document.getElementById('drink-type').disabled = false;
+            drinkType.remove(drinkType[0]);
+            drinkType.disabled = false;
             hot.disabled = true; //pilihan hot jadi tidak bisa dipilih
             iced.disabled = false; //pilihan iced jadi bisa dipilih
             iced.selected = true; //pilihan iced akan langsung dipilih
         }
     // untuk beverages yang ada pilihan 'iced' dan 'hot'
     else {
-        document.getElementById('drink-type').disabled = false;
+        drinkType.remove(drinkType[0]);
+        drinkType.disabled = false;
         iced.disabled = false;
         hot.disabled = false;
     }
